@@ -1,0 +1,99 @@
+/*
+Theme Name: Lino Lakes
+Theme URI: https://wordpress.org/themes/linolakes/
+Author: Sam
+Author URI: http://www.infinitedesignmn.com
+Description: A very simple wordpress theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentyfourteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/* ---------------------------------------------- */
+/* Header style */
+.header{
+    margin: 35px 0;
+} 
+
+
+/* Standard Nav Menu */
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav ul:before, .site-nav ul:after { content: ""; display: table; }
+.site-nav ul:after { clear: both; }
+.site-nav ul { *zoom: 1; }
+
+.site-nav ul li {
+	list-style: none;
+	float: left;
+}
+
+.site-nav ul li a:link,
+.site-nav ul li a:visited {
+	display: block;
+}
+
+
+
+/* ---------------------------------------------- */
+/* Body style */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* Blog */
+.right-column {
+    margin-top: -20px;
+}
+
+#main{
+    min-height: 650px;
+}
+
+/* Home page with 3 columns */
+
+.thumbnail .caption {
+    padding: 9px 0;
+}
+
+.thumbnail .caption h4 {
+    margin: 0;
+}
+ 
+.threecolumns img {
+    width: 351px !important;
+    height: 234px !important;
+
+}
+
+
+
+
+
+
+
+
+/* ---------------------------------------------- */
+/* Footer style */
+.footer {
+    padding-right: 0;
+    padding-left: 0;
+}
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+
+ 
