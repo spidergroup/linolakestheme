@@ -23,7 +23,6 @@ if ($query->have_posts()) : ?>
                     
                     <?php 
                         $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' ); 
-                        //var_dump( $large_image_url);
                     ?>
                     
                     <div class="thumbnail threecolumns">
@@ -40,7 +39,6 @@ if ($query->have_posts()) : ?>
                                     <?php the_title(); ?>
                                 </a>
                             </h4>
-                            <!--<p><?php the_content(); ?></p>-->
                       </div>
                     </div>
             </div>
