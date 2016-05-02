@@ -33,17 +33,6 @@
 			</nav>
 			 
 			 
-		  
-		  
-		  
-			
-            <!--<nav>
-              <ul class="nav nav-pills pull-right">
-                <li role="presentation" class="active"><a href="index.html">Home</a></li>
-                <li role="presentation"><a href="blog.html">Blog</a></li>
-                <li role="presentation"><a href="about.html">About</a></li>
-              </ul>
-            </nav>-->
             <h3 class="text-muted"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h3>
           </div>
           <!-- End header -->
