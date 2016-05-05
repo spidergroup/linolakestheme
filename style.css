@@ -41,6 +41,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	display: block;
 }
 
+.activemenu, .activemenu a {
+    font-style: italic;
+}
 
 
 /* ---------------------------------------------- */
@@ -50,6 +53,10 @@ body {
     padding-bottom: 20px;
 }
 
+a:hover{
+    text-decoration: none;
+    color: #3b5998;
+}
 
 /* Blog */
 .right-column {
