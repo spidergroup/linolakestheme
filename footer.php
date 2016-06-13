@@ -1,7 +1,7 @@
  		</div>
 		<!-- End main container -->
 		
-		
+		<div class="clearfix" ></div>
 		<!-- Begin Footer -->
 		<footer class="footer">
 			<nav class="site-nav">
@@ -27,4 +27,5 @@
 	 
 	</body>
 	<?php wp_footer(); ?>
+	
 </html>

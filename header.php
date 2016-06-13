@@ -32,8 +32,8 @@
 				<?php wp_nav_menu(  $args ); ?>
 			</nav>
 			 
-			 
-            <h3 class="text-muted"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h3>
+			<div class="sitename"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></div>
+            
           </div>
           <!-- End header -->
         

@@ -1,22 +1,31 @@
 <?php
-
-/*
-Template Name: wHome with 3 Columns
-*/
+ 
 
 get_header();
 
 $args = array(
-	'post_type' => 'post'
+	'post_type' => 'post',
+    'category_name' => 'WooCommerce'
 );
 $query = new WP_Query( $args );
+
+
+if (is_category()) {
+    echo single_cat_title();
+    echo '\ncategory page';
+} elseif (is_tag()){
+    echo 'tag page';
+} else{
+    echo 'Archive page';
+}
+    
 
 if ($query->have_posts()) : ?>
 
 
     <!-- Begin grid with 3 columns -->
     <div class="row">
-           
+           this is woocommerce page 11333
         <?php while ($query->have_posts()) : $query->the_post(); ?>
         
             <div class="col-sm-6 col-md-4">
@@ -40,7 +49,7 @@ if ($query->have_posts()) : ?>
                                     <?php the_title(); ?>
                                 </a>
                             </h4>
-                            <!--<p><?php the_content(); ?></p>-->
+                            <!--<p><?php //the_excerpt(); ?></p>-->
                       </div>
                     </div>
             </div>
