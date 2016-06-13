@@ -1,7 +1,7 @@
 <?php
 
-get_header();
-echo 'index.php';
+get_header(); 
+
 if (have_posts()) :
 	while (have_posts()) : the_post(); 
 		$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );

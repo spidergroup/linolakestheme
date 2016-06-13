@@ -11,12 +11,12 @@ $query = new WP_Query( $args );
 
 
 if (is_category()) {
-    echo single_cat_title();
-    echo '\ncategory page';
+    //echo single_cat_title();
+     
 } elseif (is_tag()){
-    echo 'tag page';
+    //echo 'tag page';
 } else{
-    echo 'Archive page';
+    //echo 'Archive page';
 }
     
 
