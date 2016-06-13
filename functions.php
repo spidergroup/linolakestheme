@@ -53,14 +53,10 @@ if ( ! function_exists( 'linolakestheme_scripts_setup' ) ) :
 		 
 		// Loads our main stylesheet.
 		wp_enqueue_style( 'flat_responsive-style', get_stylesheet_uri(), array(), current_time( 'mysql' ) );
-		// wp_enqueue_style( 'flat_responsive-open-sans', '//fonts.googleapis.com/css?family=Open+Sans:400,700,600');
-		// wp_enqueue_style( 'flat_responsive-lato', '//fonts.googleapis.com/css?family=Lato:400,700,900');
 		
 		// Loads our scripts.	 
 		wp_enqueue_script('linolakes-bootstrap-js', get_template_directory_uri() . '/lib/bootstrap/js/bootstrap.min.js', array('jquery'), current_time( 'mysql' ), true);
 		wp_enqueue_script('linolakes-jquery-js', get_template_directory_uri() . '/lib/bootstrap/js/jquery.min.js', array('jquery'), current_time( 'mysql' ), true);
-		//wp_enqueue_script( 'flat_responsive_extras', get_template_directory_uri() . '/js/linolakes_custom.js', array(), current_time( 'mysql' ), true );
-		 
 				
 	}
 	
@@ -77,14 +73,6 @@ add_filter('nav_menu_css_class' , 'set_active_nav_class' , 10 , 2);
 function set_active_nav_class ($classes, $item) {
 	
 	//only set active class for Primary menu
-	 
-    // // if (( 'primary' === $args->theme_location ) && in_array('current-menu-item', $classes) ){
-    // //     $classes[] = 'active ';
-    // // }
-    // // return $classes;
-		
-
-	
     if (in_array('current-menu-item', $classes) ){
         $classes[] = 'activemenu ';
     }
@@ -110,8 +98,7 @@ add_filter( 'excerpt_more', 'linolakestheme_excerpt_more' );
 
 
 function linolakestheme_comments($comment, $args, $depth) {
-	
-	//echo 'in mytheme_comment()';
+	 
     if ( 'div' === $args['style'] ) {
         $tag       = 'div';
         $add_below = 'comment';

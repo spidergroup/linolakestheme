@@ -1,8 +1,8 @@
 /*
 Theme Name: Lino Lakes
-Theme URI: https://wordpress.org/themes/linolakes/
+Theme URI: https://github.com/spidergroup/linolakestheme
 Author: Sam
-Author URI: http://www.infinitedesignmn.com
+Author URI: https://github.com/spidergroup/linolakestheme
 Description: A very simple wordpress theme
 Version: 1.0
 License: GNU General Public License v2 or later
@@ -171,8 +171,6 @@ a:hover{
 .comment-list .vcard span.says {
     
 }
-
-
 
 .comment-list .vcard img.photo {}
 .comment-list .vcard img.avatar {

@@ -25,14 +25,14 @@ if ($query->have_posts()) : ?>
 
     <!-- Begin grid with 3 columns -->
     <div class="row">
-           this is woocommerce page 11333
+          
         <?php while ($query->have_posts()) : $query->the_post(); ?>
         
             <div class="col-sm-6 col-md-4">
                     
                     <?php 
                         $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' ); 
-                        //var_dump( $large_image_url);
+                         
                     ?>
                     
                     <div class="thumbnail threecolumns">
@@ -49,7 +49,7 @@ if ($query->have_posts()) : ?>
                                     <?php the_title(); ?>
                                 </a>
                             </h4>
-                            <!--<p><?php //the_excerpt(); ?></p>-->
+                             
                       </div>
                     </div>
             </div>

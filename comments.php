@@ -21,8 +21,7 @@ if ( post_password_required() ) {
 			<ul class="comment-list">
 				<?php 
 				wp_list_comments( array(
-					'short_ping'  => true,
-					//'avatar_size' => 50
+					'short_ping'  => true, 
 					'callback' => 'linolakestheme_comments'
 				) );
 				?>
@@ -73,7 +72,4 @@ if ( post_password_required() ) {
 
 ?>
 		
-		
-		
-		
-	</div>
+</div>

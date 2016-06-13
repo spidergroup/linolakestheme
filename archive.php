@@ -25,7 +25,7 @@ if ($query->have_posts()) : ?>
 
     <!-- Begin grid with 3 columns -->
     <div class="row">
-           this is woocommerce page wwww
+            
         <?php while ($query->have_posts()) : $query->the_post(); ?>
         
             <div class="col-sm-6 col-md-4">

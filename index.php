@@ -39,17 +39,7 @@ if (have_posts()) :
 		echo '<p>No content found</p>';
 	
 	endif;
-	
-	
-	?>
-	
-	
-	<?php
-	
-	
-	
-	
-	
-get_footer();
+	 
+	get_footer();
 
 ?>
